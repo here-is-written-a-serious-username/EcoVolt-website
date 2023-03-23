@@ -11,9 +11,9 @@
 body {
     margin: 0;
     font-family: $main-font;
-    color: $main-color;
-    background-color: $background-color;
-    height: 100%;
+    color: $dark-font-color;
+    background-color: #FFFFFF;
+    // height: 100%;
 }
 
 // body.modal-open {
@@ -48,16 +48,15 @@ a {
 }
 
 .section {
+    @media screen and (max-width: 1199px) {
+        padding-top: 86px;
+        padding-bottom: 86px;
+    }
 
-    // @media screen and (max-width: 1199px) {
-    //     padding-top: 30px;
-    //     padding-bottom: 30px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     padding-top: 50px;
-    //     padding-bottom: 50px;
-    // }
+    @media screen and (min-width: 1200px) {
+        padding-top: 124px;
+        padding-bottom: 124px;
+    }
 }
 
 // .wrap-bgr-img {
@@ -67,27 +66,27 @@ a {
 // }
 
 .container {
-    // padding-left: 15px;
-    // padding-right: 15px;
-    // margin-left: auto;
-    // margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
-    // @media screen and (max-width: 479px) {
-    //     margin-left: 0;
-    //     margin-right: 0;
-    // }
+    @media screen and (max-width: 479px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-    // @media screen and (min-width: 480px) and (max-width: 767px) {
-    //     width: 480px;
-    // }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        width: 480px;
+    }
 
-    // @media screen and (min-width: 768px) and (max-width: 1199px) {
-    //     width: 768px;
-    // }
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        width: 768px;
+    }
 
-    // @media screen and (min-width: 1200px) {
-    //     width: 1200px;
-    // }
+    @media screen and (min-width: 1230px) {
+        width: 1230px;
+    }
 }
 
 // input {
