@@ -1,6 +1,7 @@
 .header {
+    position: absolute;
+    width: 100%;
     padding: 40px 0;
-    background-color: $accent-color;
 }
 
 .header__nav {
@@ -14,11 +15,11 @@
     line-height: calc(34px/28px);
 
     .logo-light-part {
-        color: $light-font-color;
+        color: $main-light-color;
     }
 
     .logo-dark-part {
-        color: $dark-font-color;
+        color: $secondary-dark-color;
     }
 }
 
@@ -32,11 +33,10 @@
 }
 
 .nav__link {
-    font-family: $secondary-font;
     font-weight: 400;
     font-size: 15px;
     line-height: calc(18px/15px);
     letter-spacing: 0.05em;
 
-    color: $light-font-color;
+    color: $main-light-color;
 }

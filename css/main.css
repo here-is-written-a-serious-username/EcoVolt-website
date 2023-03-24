@@ -83,8 +83,9 @@ a {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
   padding: 40px 0;
-  background-color: #FFAD00;
 }
 
 .header__nav {
@@ -105,7 +106,7 @@ a {
   color: #FFFFFF;
 }
 .logo .logo-dark-part {
-  color: #101214;
+  color: #101B28;
 }
 
 .nav__list {
@@ -120,10 +121,56 @@ a {
 }
 
 .nav__link {
-  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.2;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.hero {
+  padding-top: 235px;
+  padding-bottom: 256px;
+  background-color: #FFAD00;
+}
+
+.hero__title {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  max-width: 570px;
+  margin-bottom: 40px;
+}
+
+.hero__link {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: #FFFFFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 38px;
+}
+
+.hero__link-img {
+  margin-right: 10px;
+}
+
+.hero__btn {
+  display: block;
+  padding: 16px 36px;
+  border: none;
+  background: #101B28;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
