@@ -2,7 +2,25 @@
     padding-top: 235px;
     padding-bottom: 256px;
     background-color: $accent-color;
+
+    background-image: url(../img/hero/hero1.png);
+    background-position: bottom;
+    background-size: cover;
+    background-size: auto 256px;
+    background-repeat: no-repeat;
 }
+
+// .hero1 {
+//     padding-top: 235px;
+//     padding-bottom: 256px;
+//     margin: 0 auto;
+
+//     background-image: url(../img/hero/hero.png);
+//     background-position: bottom;
+//     background-size: contain;
+//     max-width: 1400px;
+//     background-repeat: no-repeat;
+// }
 
 .hero__title {
     font-weight: 600;
@@ -25,8 +43,12 @@
     margin-bottom: 38px;
 }
 
-.hero__link-img {
+.hero__link-icon {
     margin-right: 10px;
+
+    --color1: rgba(255, 255, 255, 0.75);
+    --color2: #fff;
+    --color3: #FFAD00;
 }
 
 .hero__btn {
@@ -42,3 +64,7 @@
     letter-spacing: 0.05em;
     color: $main-light-color;
 }
+
+// .hero__img {
+//     width: 100%;
+// }

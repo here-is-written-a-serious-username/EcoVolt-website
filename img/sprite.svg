@@ -1,0 +1,11 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<defs>
+<symbol id="play" viewBox="0 0 32 32">
+<path style="fill: var(--color1)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path style="fill: var(--color2)" d="M28 16c0 6.627-5.373 12-12 12s-12-5.373-12-12c0-6.627 5.373-12 12-12s12 5.373 12 12z"></path>
+<path style="fill: var(--color3)" d="M20.572 15.664l-6.429 3.711v-7.423l6.429 3.712z"></path>
+</symbol>
+</defs>
+</svg>
+
