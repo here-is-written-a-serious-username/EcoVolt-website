@@ -1,26 +1,17 @@
 .hero {
-    padding-top: 235px;
-    padding-bottom: 256px;
     background-color: $accent-color;
-
-    background-image: url(../img/hero/hero1.png);
-    background-position: bottom;
-    background-size: cover;
-    background-size: auto 256px;
-    background-repeat: no-repeat;
 }
 
-// .hero1 {
-//     padding-top: 235px;
-//     padding-bottom: 256px;
-//     margin: 0 auto;
+.hero-cont {
+    padding-top: 235px;
+    padding-bottom: 256px;
+    margin: 0 auto;
 
-//     background-image: url(../img/hero/hero.png);
-//     background-position: bottom;
-//     background-size: contain;
-//     max-width: 1400px;
-//     background-repeat: no-repeat;
-// }
+    background-image: url(../img/hero/hero.png), url(../img/hero/lines.svg);
+    background-position: bottom, top right;
+    max-width: 1400px;
+    background-repeat: no-repeat;
+}
 
 .hero__title {
     font-weight: 600;

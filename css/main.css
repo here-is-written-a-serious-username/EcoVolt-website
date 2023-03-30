@@ -14,6 +14,10 @@ body {
   background-color: #FFFFFF;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -108,34 +112,110 @@ a {
 .logo .logo-dark-part {
   color: #101B28;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    position: relative;
+    z-index: 3;
+  }
+}
 
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
+}
+@media screen and (max-width: 767px) {
+  .nav__list {
+    position: fixed;
+    z-index: 1;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 140px 30px 30px;
+    background-color: #FFAD00;
+    opacity: 0;
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
+    transition: opacity 250ms linear, -webkit-transform 250ms linear;
+    transition: opacity 250ms linear, transform 250ms linear;
+    transition: opacity 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
+    pointer-events: none;
+    overflow-y: scroll;
+  }
+  .nav__list.is-open {
+    opacity: 0.9;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    pointer-events: all;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__list {
+    margin-left: auto;
+  }
 }
 
-.nav__item + .nav__item {
-  margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .nav__item + .nav__item {
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__item + .nav__item {
+    margin-left: 30px;
+  }
 }
 
 .nav__link {
   font-weight: 400;
-  font-size: 15px;
   line-height: 1.2;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }
+@media screen and (max-width: 767px) {
+  .nav__link {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .btn-mobil-menu {
+    position: relative;
+    z-index: 3;
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .btn-mobil-menu {
+    display: none;
+  }
+}
 
 .hero {
+  background-color: #FFAD00;
+}
+
+.hero-cont {
   padding-top: 235px;
   padding-bottom: 256px;
-  background-color: #FFAD00;
-  background-image: url(../img/hero/hero1.png);
-  background-position: bottom;
-  background-size: cover;
-  background-size: auto 256px;
+  margin: 0 auto;
+  background-image: url(../img/hero/hero.png), url(../img/hero/lines.svg);
+  background-position: bottom, top right;
+  max-width: 1400px;
   background-repeat: no-repeat;
 }
 

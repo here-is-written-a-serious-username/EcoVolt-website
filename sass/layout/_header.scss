@@ -21,22 +21,86 @@
     .logo-dark-part {
         color: $secondary-dark-color;
     }
+
+    @media screen and (max-width: 767px) {
+        position: relative;
+        z-index: 3;
+    }
 }
 
 .nav__list {
     display: flex;
-    margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        z-index: 1;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+
+        padding: 140px 30px 30px;
+
+        background-color: $accent-color;
+        // opacity: 0.9;
+
+        opacity: 0;
+        transition: opacity 250ms linear, transform 250ms linear;
+        pointer-events: none;
+        overflow-y: scroll;
+
+        &.is-open {
+            opacity: 0.9;
+            transform: translateY(100%);
+            pointer-events: all;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
 }
 
 .nav__item+.nav__item {
-    margin-left: 30px;
+    @media screen and (max-width: 767px) {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: 30px;
+    }
+
 }
 
 .nav__link {
     font-weight: 400;
-    font-size: 15px;
     line-height: calc(18px/15px);
     letter-spacing: 0.05em;
 
     color: $main-light-color;
+
+    @media screen and (max-width: 767px) {
+        font-size: 20px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 15px;
+    }
+}
+
+.btn-mobil-menu {
+    @media screen and (max-width: 767px) {
+        position: relative;
+        z-index: 3;
+        margin-left: auto;
+        width: 50px;
+        height: 50px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
