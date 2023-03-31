@@ -3,7 +3,6 @@
 }
 
 .hero-cont {
-    padding-top: 235px;
     padding-bottom: 256px;
     margin: 0 auto;
 
@@ -11,16 +10,35 @@
     background-position: bottom, top right;
     max-width: 1400px;
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 160px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 235px;
+    }
 }
 
 .hero__title {
     font-weight: 600;
-    font-size: 44px;
     line-height: 1.15;
     letter-spacing: 0.02em;
     color: $main-light-color;
     max-width: 570px;
     margin-bottom: 40px;
+
+    @media screen and (max-width: 479px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 44px;
+    }
 }
 
 .hero__link {
@@ -44,7 +62,6 @@
 
 .hero__btn {
     display: block;
-    padding: 16px 36px;
     border: none;
 
     background: $secondary-dark-color;
@@ -54,8 +71,13 @@
     line-height: calc(28px/16px);
     letter-spacing: 0.05em;
     color: $main-light-color;
-}
 
-// .hero__img {
-//     width: 100%;
-// }
+    @media screen and (max-width: 479px) {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding: 16px 36px;
+    }
+}

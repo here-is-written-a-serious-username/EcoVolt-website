@@ -1,7 +1,21 @@
 .header {
     position: absolute;
+    z-index: 1;
     width: 100%;
     padding: 40px 0;
+
+    @media screen and (max-width: 767px) {
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $accent-color;
+        }
+    }
 }
 
 .header__nav {
@@ -39,21 +53,18 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        // justify-content: center;
         align-items: center;
 
         padding: 140px 30px 30px;
 
         background-color: $accent-color;
-        // opacity: 0.9;
-
         opacity: 0;
         transition: opacity 250ms linear, transform 250ms linear;
         pointer-events: none;
         overflow-y: scroll;
 
         &.is-open {
-            opacity: 0.9;
+            opacity: 1;
             transform: translateY(100%);
             pointer-events: all;
         }
@@ -83,7 +94,7 @@
     color: $main-light-color;
 
     @media screen and (max-width: 767px) {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     @media screen and (min-width: 768px) {
@@ -92,15 +103,59 @@
 }
 
 .btn-mobil-menu {
+
     @media screen and (max-width: 767px) {
         position: relative;
         z-index: 3;
         margin-left: auto;
-        width: 50px;
-        height: 50px;
+        width: 28px;
+        height: 14px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
     }
 
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    .btn-burger {
+        display: block;
+        height: 2px;
+        background-color: $main-light-color;
+        transition: transform 250ms linear;
+    }
+
+    &::before,
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $main-light-color;
+        transition: transform 250ms linear;
+    }
+
+    &::before {
+        top: 0;
+    }
+
+    &::after {
+        bottom: 0;
+    }
+
+    &.btn-active {
+        .btn-burger {
+            transform: scale(0);
+        }
+
+        &::before {
+            transform: rotate(-45deg) translateY(8px);
+        }
+
+        &::after {
+            transform: rotate(45deg) translateY(-8px);
+        }
     }
 }
