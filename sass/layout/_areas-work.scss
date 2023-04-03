@@ -10,9 +10,24 @@
 
 .areas-work__list {
     display: flex;
+    gap: 1px;
 }
 
 .areas-work__item {
     background-color: $accent-color;
-    // width: calc((100% -));
+    width: calc((100% - 1px)/2);
+    padding-top: 112px;
+    padding-bottom: 102px;
+}
+
+
+
+
+.card__title {
+    font-size: 24px;
+    line-height: calc(29px/24px);
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: $main-light-color;
 }

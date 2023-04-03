@@ -503,8 +503,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 1px;
 }
 
 .areas-work__item {
   background-color: #FFAD00;
+  width: calc((100% - 1px) / 2);
+  padding-top: 112px;
+  padding-bottom: 102px;
+}
+
+.card__title {
+  font-size: 24px;
+  line-height: 1.2083333333;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */
