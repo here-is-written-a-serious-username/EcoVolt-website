@@ -1,0 +1,18 @@
+.areas-work__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: calc(50px/42px);
+    text-align: center;
+
+    color: #161616;
+    margin-bottom: 126px;
+}
+
+.areas-work__list {
+    display: flex;
+}
+
+.areas-work__item {
+    background-color: $accent-color;
+    // width: calc((100% -));
+}
