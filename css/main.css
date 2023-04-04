@@ -495,7 +495,7 @@ a {
   font-size: 42px;
   line-height: 1.1904761905;
   text-align: center;
-  color: #161616;
+  color: red;
   margin-bottom: 126px;
 }
 
@@ -513,10 +513,28 @@ a {
   padding-bottom: 102px;
 }
 
+.areas-work__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.areas-work__icon {
+  stroke: #FFFFFF;
+  stroke-width: 1.5px;
+  fill: none;
+}
+
 .card__title {
   font-size: 24px;
   line-height: 1.2083333333;
-  text-align: center;
   letter-spacing: 0.05em;
   color: #FFFFFF;
 }/*# sourceMappingURL=main.css.map */

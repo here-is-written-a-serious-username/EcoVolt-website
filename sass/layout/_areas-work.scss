@@ -4,7 +4,8 @@
     line-height: calc(50px/42px);
     text-align: center;
 
-    color: #161616;
+    // color: #161616;
+    color: red;
     margin-bottom: 126px;
 }
 
@@ -20,13 +21,22 @@
     padding-bottom: 102px;
 }
 
+.areas-work__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.areas-work__icon {
+    stroke: $main-light-color;
+    stroke-width: 1.5px;
+    fill: none;
+}
 
 
 .card__title {
     font-size: 24px;
     line-height: calc(29px/24px);
-    text-align: center;
     letter-spacing: 0.05em;
 
     color: $main-light-color;
