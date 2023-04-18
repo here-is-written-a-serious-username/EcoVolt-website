@@ -332,6 +332,7 @@ a {
 .hero__btn {
   display: block;
   border: none;
+  cursor: pointer;
   background: #101B28;
   font-weight: 500;
   font-size: 16px;
@@ -597,4 +598,35 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 100px;
+}
+
+.about__title {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #101214;
+  margin-bottom: 100px;
+  margin-top: 16px;
+}
+
+.about__label {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 1.37;
+  letter-spacing: -0.04em;
+  color: #FFFFFF;
+  text-shadow: -0.6px 0px 0px #FFAD00, 0.6px 0px 0px #FFAD00, 0px -0.6px 0px #FFAD00, 0px 0.6px 0px #FFAD00;
+  margin-bottom: 40px;
+}
+
+.about__content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #101214;
 }/*# sourceMappingURL=main.css.map */

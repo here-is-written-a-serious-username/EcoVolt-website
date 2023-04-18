@@ -3,12 +3,38 @@
     margin-bottom: 100px;
 }
 
+.about__title {
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 50px;
 
+    align-items: center;
 
-// font-weight: 500;
-// font-size: 42px;
-// line-height: 50px;
-// display: flex;
-// align-items: center;
+    color: $main-dark-color;
+    margin-bottom: 100px;
+    margin-top: 16px;
+}
 
-// color: #101214;
+.about__label {
+    font-family: $secondary-font;
+    font-weight: 600;
+    font-size: 92px;
+    line-height: 1.37;
+    letter-spacing: -0.04em;
+    color: $main-light-color;
+    text-shadow:
+        -0.6px 0px 0px $accent-color,
+        0.6px 0px 0px $accent-color,
+        0px -0.6px 0px $accent-color,
+        0px 0.6px 0px $accent-color;
+
+    margin-bottom: 40px;
+}
+
+.about__content {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.02em;
+    color: $main-dark-color;
+}
