@@ -86,6 +86,16 @@ a {
   }
 }
 
+input {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
 .header {
   position: absolute;
   z-index: 1;
@@ -595,12 +605,21 @@ a {
 
 .about__top-part {
   margin-bottom: 100px;
+}
+
+.about__bottom-part {
+  position: relative;
+}
+
+.about__top-part,
+.about__bottom-part {
   -webkit-column-gap: 10%;
      -moz-column-gap: 10%;
           column-gap: 10%;
 }
 @media screen and (min-width: 768px) {
-  .about__top-part {
+  .about__top-part,
+  .about__bottom-part {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -653,6 +672,10 @@ a {
   color: #101214;
 }
 
+.about__content:first-child {
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) {
   .about__top-part_left-side,
   .about__bottom-part_left-side {
@@ -661,4 +684,88 @@ a {
   .about__top-part_right-side {
     width: 50%;
   }
+}
+.about__img {
+  margin-bottom: 78px;
+  margin-left: auto;
+  margin-right: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.form {
+  position: absolute;
+  background-color: #FFAD00;
+  padding: 94px 98px 94px 82px;
+  color: #FFFFFF;
+}
+
+.about__form {
+  bottom: -40px;
+  right: 0;
+  width: 532px;
+}
+
+.form__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.37;
+  margin-bottom: 20px;
+}
+
+.form__about {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  margin-bottom: 52px;
+}
+
+.form__fields-wrap {
+  margin-bottom: 40px;
+  max-width: 300px;
+}
+
+.form__fields + .form__fields {
+  margin-top: 30px;
+}
+
+.form__fields {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+}
+
+.form__input {
+  cursor: pointer;
+  background: inherit;
+  border: none;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #FFFFFF;
+  padding: 6px 10px;
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  color: inherit;
+}
+
+.form__fields:focus-within > .form__input {
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  outline: none;
+}
+
+.form__btn {
+  cursor: pointer;
+  padding: 22px 32px;
+  background-color: #FFFFFF;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  letter-spacing: 0.05em;
+  color: #272626;
 }/*# sourceMappingURL=main.css.map */
