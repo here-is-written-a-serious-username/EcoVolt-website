@@ -15,7 +15,15 @@
     text-align: center;
 
     color: #161616;
-    margin-bottom: 126px;
+
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 48px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 126px;
+    }
 }
 
 .areas-work__list {
