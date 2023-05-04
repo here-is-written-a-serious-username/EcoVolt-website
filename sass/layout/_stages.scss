@@ -9,12 +9,33 @@
     line-height: calc(50px/42px);
     color: $main-light-color;
 
-    margin-bottom: 128px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 48px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        margin-bottom: 88px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        margin-bottom: 126px;
+    }
 }
 
 .stages__list {
-    display: flex;
-    justify-content: space-between;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 4%;
+    }
+}
+
+.stages__item {
+    @media screen and (min-width: 768px) {
+        width: 32%;
+    }
+
+    margin-bottom: 48px;
 }
 
 .stages-card__number-wrap {
@@ -65,4 +86,16 @@
     line-height: 1.36;
     color: $main-light-color;
     margin-bottom: 42px;
+}
+
+.stages-card__list {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.stages-card__item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ECECEC;
 }

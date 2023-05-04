@@ -587,6 +587,7 @@ label {
 
 .card__title {
   position: relative;
+  text-align: center;
   font-weight: 400;
   line-height: 1.2083333333;
   letter-spacing: 0.05em;
@@ -677,7 +678,7 @@ label {
 }
 @media screen and (max-width: 479px) {
   .about__label {
-    font-size: 60px;
+    font-size: 48px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -880,6 +881,16 @@ label {
   letter-spacing: 0.05em;
   color: #272626;
 }
+@media screen and (max-width: 479px) {
+  .form__btn {
+    padding: 18px 24px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .form__btn {
+    padding: 22px 32px;
+  }
+}
 
 .stages {
   background-color: #212020;
@@ -891,16 +902,39 @@ label {
   font-size: 42px;
   line-height: 1.1904761905;
   color: #FFFFFF;
-  margin-bottom: 128px;
+}
+@media screen and (max-width: 767px) {
+  .stages__title {
+    margin-bottom: 48px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1229px) {
+  .stages__title {
+    margin-bottom: 88px;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .stages__title {
+    margin-bottom: 126px;
+  }
 }
 
-.stages__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .stages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 4%;
+  }
+}
+
+.stages__item {
+  margin-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .stages__item {
+    width: 32%;
+  }
 }
 
 .stages-card__number-wrap {
@@ -955,4 +989,16 @@ label {
   line-height: 1.36;
   color: #FFFFFF;
   margin-bottom: 42px;
+}
+
+.stages-card__list {
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.stages-card__item {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ECECEC;
 }/*# sourceMappingURL=main.css.map */

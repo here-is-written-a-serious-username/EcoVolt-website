@@ -69,7 +69,7 @@
         0px 0.6px 0px $accent-color;
 
     @media screen and (max-width: 479px) {
-        font-size: 60px;
+        font-size: 48px;
     }
 
     @media screen and (max-width: 767px) {
@@ -265,21 +265,12 @@
     line-height: calc(17px/14px);
     letter-spacing: 0.05em;
     color: #272626;
+
+    @media screen and (max-width: 479px) {
+        padding: 18px 24px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding: 22px 32px;
+    }
 }
-
-// @media screen and (max-width: 479px) {
-//     margin-left: 0;
-//     margin-right: 0;
-// }
-
-// @media screen and (min-width: 480px) and (max-width: 767px) {
-//     width: 480px;
-// }
-
-// @media screen and (min-width: 768px) and (max-width: 1229px) {
-//     width: 768px;
-// }
-
-// @media screen and (min-width: 1230px) {
-//     width: 1230px;
-// }
