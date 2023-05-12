@@ -1001,4 +1001,24 @@ label {
   font-size: 16px;
   line-height: 1.5;
   color: #ECECEC;
+}
+
+:root {
+  --swiper-theme-color: #FFAD00;
+}
+
+.projects-wrap {
+  position: relative;
+}
+
+.swiper-button-prev {
+  left: -36px;
+}
+
+.swiper-button-next {
+  right: -36px;
+}
+
+.swiper-pagination {
+  bottom: -36px !important;
 }/*# sourceMappingURL=main.css.map */
