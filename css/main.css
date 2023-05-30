@@ -96,6 +96,20 @@ label {
   display: block;
 }
 
+.title {
+  line-height: 1.1904761905;
+}
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 36px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 42px;
+  }
+}
+
 .header {
   position: absolute;
   z-index: 1;
@@ -390,18 +404,15 @@ label {
 
 .advantages__title {
   font-weight: 600;
-  line-height: 1.1904761905;
 }
 @media screen and (max-width: 767px) {
   .advantages__title {
     margin-bottom: 48px;
-    font-size: 36px;
   }
 }
 @media screen and (min-width: 768px) {
   .advantages__title {
     margin-bottom: 136px;
-    font-size: 42px;
   }
 }
 
@@ -514,8 +525,6 @@ label {
 
 .areas-work__title {
   font-weight: 600;
-  font-size: 42px;
-  line-height: 1.1904761905;
   text-align: center;
   color: #161616;
 }
