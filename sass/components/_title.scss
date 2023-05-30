@@ -1,0 +1,16 @@
+.title {
+
+    line-height: calc(50px/42px);
+
+    @media screen and (max-width: 767px) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+    }
+}
+
+
+// доробити клас тітле, марджин 126 - 128 -130 -136 взяти 128, окремо для слайдера 80 +/-, винести колір
+// почав з досягнення і напрямки роботи
