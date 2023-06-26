@@ -1030,4 +1030,53 @@ label {
 
 .swiper-pagination {
   bottom: -36px !important;
+}
+
+.projects__titles {
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .projects__titles {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects__titles {
+    margin-bottom: 80px;
+  }
+}
+
+.projects__card-about {
+  padding: 28px 22px 26px 44px;
+  background-color: #212020;
+}
+
+.projects__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.projects__card-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4285714286;
+  color: #FFFFFF;
+}
+
+.projects__card-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 12px 36px 14px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2142857143;
+  color: #FFFFFF;
+  background-color: #FFAD00;
 }/*# sourceMappingURL=main.css.map */

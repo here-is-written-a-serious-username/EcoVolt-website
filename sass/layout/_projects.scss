@@ -18,3 +18,56 @@
 .swiper-pagination {
     bottom: -36px !important;
 }
+
+
+.projects__titles {
+
+    text-align: center;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
+}
+
+.projects__card-about {
+    padding: 28px 22px 26px 44px;
+    background-color: $background-dark;
+}
+
+.projects__card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22px/18px);
+    color: $main-light-color;
+
+    margin-bottom: 20px;
+}
+
+.projects__card-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(20px/14px);
+    color: $main-light-color;
+}
+
+.projects__card-btn {
+    // // width: fit-content;
+    // display: block;
+    // margin-left: auto;
+    // margin-right: auto;
+    display: flex;
+    justify-content: center;
+
+    padding: 12px 36px 14px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17px/14px);
+
+    color: $main-light-color;
+    background-color: $accent-color;
+}
