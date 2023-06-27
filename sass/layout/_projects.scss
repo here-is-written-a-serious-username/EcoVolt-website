@@ -20,7 +20,11 @@
 }
 
 
-.projects__titles {
+.projects__card-img {
+    width: 100%;
+}
+
+.projects__title {
 
     text-align: center;
 
@@ -52,15 +56,22 @@
     font-size: 14px;
     line-height: calc(20px/14px);
     color: $main-light-color;
+    margin-bottom: 26px;
+    list-style: disc inside;
 }
 
+.projects__card-item {
+    &::marker {
+        color: $accent-color;
+    }
+}
+
+
 .projects__card-btn {
-    // // width: fit-content;
-    // display: block;
-    // margin-left: auto;
-    // margin-right: auto;
-    display: flex;
-    justify-content: center;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     padding: 12px 36px 14px;
 

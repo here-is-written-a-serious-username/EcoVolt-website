@@ -1032,16 +1032,20 @@ label {
   bottom: -36px !important;
 }
 
-.projects__titles {
+.projects__card-img {
+  width: 100%;
+}
+
+.projects__title {
   text-align: center;
 }
 @media screen and (max-width: 767px) {
-  .projects__titles {
+  .projects__title {
     margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
-  .projects__titles {
+  .projects__title {
     margin-bottom: 80px;
   }
 }
@@ -1064,15 +1068,21 @@ label {
   font-size: 14px;
   line-height: 1.4285714286;
   color: #FFFFFF;
+  margin-bottom: 26px;
+  list-style: disc inside;
+}
+
+.projects__card-item::marker {
+  color: #FFAD00;
 }
 
 .projects__card-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   padding: 12px 36px 14px;
   font-weight: 500;
   font-size: 14px;
