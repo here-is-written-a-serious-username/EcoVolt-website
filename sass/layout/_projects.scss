@@ -2,22 +2,26 @@
     --swiper-theme-color: #FFAD00;
 }
 
-
 .projects-wrap {
     position: relative;
 }
 
-.swiper-button-prev {
-    left: -36px;
+.swiper {
+    width: calc(100% - 72px);
 }
 
-.swiper-button-next {
-    right: -36px;
-}
+// .swiper-button-prev {
+//     left: -36px;
+// }
+
+// .swiper-button-next {
+//     right: -36px;
+// }
 
 .swiper-pagination {
     bottom: -36px !important;
 }
+
 
 
 .projects__card-img {

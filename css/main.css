@@ -1020,12 +1020,8 @@ label {
   position: relative;
 }
 
-.swiper-button-prev {
-  left: -36px;
-}
-
-.swiper-button-next {
-  right: -36px;
+.swiper {
+  width: calc(100% - 72px);
 }
 
 .swiper-pagination {

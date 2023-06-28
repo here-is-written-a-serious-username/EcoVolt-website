@@ -3,8 +3,8 @@
 const swiper = new Swiper('.swiper', {
 
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 40,
+    // slidesPerView: 3,
+    // spaceBetween: 40,
 
     createElements: true,
 
@@ -29,10 +29,22 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.swiper-button-prev',
     },
 
+    breakpoints: {
 
-
-    // scrollbar: {
-    //     el: '.swiper-scrollbar',
-    // },
+        // when window width is >= 320px
+        0: {
+            slidesPerView: 1,
+        },
+        // when window width is >= 480px
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 20
+        },
+        // when window width is >= 640px
+        1230: {
+            slidesPerView: 3,
+            spaceBetween: 30
+        }
+    },
 
 });
