@@ -260,7 +260,7 @@
         <section class="section projects">
             <div class="container projects-wrap">
                 <h2 class="projects__title title">Реалізовані проекти</h2>
-                <div class="swiper">
+                <div class="swiper swiper-projects">
                     <ul class="projects__list swiper-wrapper">
                         <li class="projects__item swiper-slide">
                             <div class="projects__card">
@@ -372,14 +372,36 @@
                             </div>
                         </li>
                     </ul>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-pagination"></div>
-
             </div>
         </section>
+
+        <section class="section partners">
+            <div class="container">
+                <h2 class="partners__title title">Реалізовані проекти</h2>
+
+                <div class="swiper swiper-partners">
+
+                    <ul class="swiper-wrapper partners__list">
+                        <li class="swiper-slide partners__item">Huawei</li>
+                        <li class="swiper-slide partners__item">SunPower Corporation</li>
+                        <li class="swiper-slide partners__item">Canadian Solar</li>
+                        <li class="swiper-slide partners__item">Longi Solar</li>
+                        <li class="swiper-slide partners__item">Kripter</li>
+                        <li class="swiper-slide partners__item">Pront</li>
+                        <li class="swiper-slide partners__item">Sunfix</li>
+                    </ul>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section"></section>
 
     </main>
 
@@ -387,8 +409,8 @@
 
     <script src="./js/mobile-menu.js" type="module"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-    <script src="./js/slider.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="module"></script>
+    <script src="./js/slider.js" type="module"></script>
 
 </body>
 

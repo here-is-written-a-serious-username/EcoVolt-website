@@ -1,26 +1,25 @@
 :root {
     --swiper-theme-color: #FFAD00;
+    --swiper-navigation-sides-offset: 0;
 }
 
 .projects-wrap {
     position: relative;
 }
 
-.swiper {
-    width: calc(100% - 72px);
+.swiper-projects {
+    // width: calc(100% - 72px);
+    // padding: 0 40px 40px 40px;
+    padding-bottom: 40px;
 }
 
-// .swiper-button-prev {
-//     left: -36px;
+// .swiper-wrapper {
+//     width: calc(100% - 80px);
 // }
 
-// .swiper-button-next {
-//     right: -36px;
+// .swiper-pagination {
+//     bottom: -36px !important;
 // }
-
-.swiper-pagination {
-    bottom: -36px !important;
-}
 
 
 

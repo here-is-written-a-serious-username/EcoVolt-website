@@ -1014,18 +1014,15 @@ label {
 
 :root {
   --swiper-theme-color: #FFAD00;
+  --swiper-navigation-sides-offset: 0;
 }
 
 .projects-wrap {
   position: relative;
 }
 
-.swiper {
-  width: calc(100% - 72px);
-}
-
-.swiper-pagination {
-  bottom: -36px !important;
+.swiper-projects {
+  padding-bottom: 40px;
 }
 
 .projects__card-img {
@@ -1088,4 +1085,23 @@ label {
   line-height: 1.2142857143;
   color: #FFFFFF;
   background-color: #FFAD00;
+}
+
+.partners {
+  background-color: #FFAD00;
+}
+
+.partners__title {
+  color: #FFFFFF;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .partners__title {
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .partners__title {
+    margin-bottom: 80px;
+  }
 }/*# sourceMappingURL=main.css.map */
