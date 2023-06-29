@@ -1,27 +1,16 @@
 :root {
-    --swiper-theme-color: #FFAD00;
+    --swiper-pagination-color: #FFAD00;
     --swiper-navigation-sides-offset: 0;
 }
 
-.projects-wrap {
-    position: relative;
-}
-
 .swiper-projects {
-    // width: calc(100% - 72px);
-    // padding: 0 40px 40px 40px;
-    padding-bottom: 40px;
+    padding: 0 40px 40px 40px;
+    // padding-bottom: 40px;
 }
 
-// .swiper-wrapper {
-//     width: calc(100% - 80px);
-// }
-
-// .swiper-pagination {
-//     bottom: -36px !important;
-// }
-
-
+.swiper-btns-projects {
+    color: $accent-color;
+}
 
 .projects__card-img {
     width: 100%;

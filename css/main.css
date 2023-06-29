@@ -1013,16 +1013,16 @@ label {
 }
 
 :root {
-  --swiper-theme-color: #FFAD00;
+  --swiper-pagination-color: #FFAD00;
   --swiper-navigation-sides-offset: 0;
 }
 
-.projects-wrap {
-  position: relative;
+.swiper-projects {
+  padding: 0 40px 40px 40px;
 }
 
-.swiper-projects {
-  padding-bottom: 40px;
+.swiper-btns-projects {
+  color: #FFAD00;
 }
 
 .projects__card-img {
@@ -1087,6 +1087,21 @@ label {
   background-color: #FFAD00;
 }
 
+.swiper-partners {
+  padding: 0 50px;
+}
+
+.swiper-btns-partners {
+  background-color: #FFFFFF;
+  width: 46px;
+  border-radius: 50%;
+}
+
+.swiper-btns-partners::after {
+  font-size: 18px;
+  color: #FFAD00;
+}
+
 .partners {
   background-color: #FFAD00;
 }
@@ -1104,4 +1119,19 @@ label {
   .partners__title {
     margin-bottom: 80px;
   }
+}
+
+.partners__item {
+  background-color: #FFFFFF;
+  aspect-ratio: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
 }/*# sourceMappingURL=main.css.map */
