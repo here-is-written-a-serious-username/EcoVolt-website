@@ -1,0 +1,117 @@
+.advantages {
+
+    background-image: url(../img/SVG/advantages-bottom.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 1229px) {
+        padding-top: 86px;
+        padding-bottom: 296px;
+    }
+
+    @media screen and (max-width: 767px) {
+        background-position: left bottom;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding-bottom: 396px;
+        padding-top: 124px;
+    }
+}
+
+
+// .advantages__title {
+// }
+
+
+.advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767px) {
+        .advantages__item+.advantages__item {
+            margin-top: 30px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        gap: 100px;
+    }
+}
+
+.advantages__item {
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 100px)/3);
+    }
+}
+
+.advantages-card__number-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.advantages-card__bckgr-icon {
+    stroke: rgba(107, 107, 107, 0.15);
+    // width="110" height="98"
+
+    @media screen and (max-width: 767px) {
+        width: 88px;
+        height: 78px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 110px;
+        height: 98px;
+    }
+}
+
+.advantages-card__number {
+    position: absolute;
+    left: 12px;
+
+    font-family: $secondary-font;
+    font-weight: 600;
+    line-height: calc(66px/54px);
+
+    color: $accent-color;
+
+    @media screen and (max-width: 767px) {
+        font-size: 42px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 54px;
+    }
+}
+
+.advantages-card__title {
+    max-width: 240px;
+    margin-bottom: 30px;
+
+    font-weight: 600;
+    font-size: 22px;
+    line-height: calc(30px/22px);
+
+    color: #131312;
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        font-size: 22px;
+    }
+}
+
+.advantages-card__about {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: calc(24px/16px);
+
+    color: #4E4E4E;
+}

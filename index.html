@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/main.min.css">
+
+    <title>EcoVolt</title>
+</head>
+
+<body>
+
+    <div class="main-page">
+        <header class="header">
+            <div class="container">
+                <nav class="header__nav">
+                    <a class="logo header__logo" href="./index.html" lang="en">
+                        <span class="logo-light-part">ECO</span>
+                        <span class="logo-dark-part">VOLT</span>
+                    </a>
+
+                    <ul class="nav__list" id="mobil-menu">
+                        <li class="nav__item"><a href="#" class="nav__link">Послуги</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Проекти</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Про нас</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+                    </ul>
+
+                    <button aria-expanded="false" aria-controls="mobil-menu" aria-label="open or close the mobile menu"
+                        class="btn-mobil-menu js-toggle-mobil-menu"><span class="btn-burger"></span></button>
+                </nav>
+            </div>
+        </header>
+
+        <section class="hero">
+
+            <!-- <div class="hero-cont">
+                <div class="container">
+                    <h1 class="hero__title">Сонячні електростанції для вашого будинку</h1>
+                    <a class="hero__link" href="#">
+                        <svg class="hero__link-icon" width="45" height="45">
+                            <use href="./img/sprite.svg#play"></use>
+                        </svg>
+                        Перегляньте відео про нас</a>
+                    <button class="btn hero__btn" type="button">Отримати консультацію</button>
+                </div>
+            </div> -->
+
+            <!-- === варіант без додаткового контейнера старт === -->
+            <!-- <div class="container">
+                <h1 class="hero__title">Сонячні електростанції для вашого будинку</h1>
+                <a class="hero__link" href="#">
+                    <svg class="hero__link-icon" width="45" height="45">
+                        <use href="./img/sprite.svg#play"></use>
+                    </svg>
+                    Перегляньте відео про нас</a>
+                <button class="btn hero__btn" type="button">Отримати консультацію</button>
+            </div> -->
+            <!-- === варіант без додаткового контейнера енд === -->
+
+
+            <!-- === варіант без додаткового контейнера з відео старт === -->
+            <div class="container">
+                <!-- <video autoplay loop muted playsinline>
+                    <source src="../Video майдан/DJI_0157.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video> -->
+                <h1 class="hero__title">Сонячні електростанції для вашого будинку</h1>
+                <a class="hero__link" href="#">
+                    <svg class="hero__link-icon" width="45" height="45">
+                        <use href="./img/sprite.svg#play"></use>
+                    </svg>
+                    Перегляньте відео про нас</a>
+                <button class="btn hero__btn" type="button">Отримати консультацію</button>
+            </div>
+            <!-- === варіант без додаткового контейнера з відео енд === -->
+
+        </section>
+    </div>
+
+    <main>
+
+        <section class="advantages">
+            <div class="container">
+                <h2 class="advantages__title title title-dark title-big-margin">Чому обирають саме нас</h2>
+                <ul class="advantages__list">
+                    <li class="advantages__item">
+                        <div class="advantages-card">
+                            <div class="advantages-card__number-wrap">
+                                <svg class="advantages-card__bckgr-icon">
+                                    <use href="./img/sprite.svg#icon-numbered-list"></use>
+                                </svg>
+                                <p class="advantages-card__number">01</p>
+                            </div>
+                            <h3 class="advantages-card__title">Ми працюємо за зразком ISO 9001</h3>
+                            <p class="advantages-card__about">Ми стандартували всі наші процеси за зразком сертифікату І5О 9001. Інженери пройшли
+                                навчання в Європі. Висока кваліфікація монтажних команд дозволяє
+                                виконувати проекти не тільки в Україні, а також на території Євросоюзу.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages-card">
+                            <div class="advantages-card__number-wrap">
+                                <svg class="advantages-card__bckgr-icon">
+                                    <use href="./img/sprite.svg#icon-numbered-list"></use>
+                                </svg>
+                                <p class="advantages-card__number">02</p>
+                            </div>
+                            <h3 class="advantages-card__title">Ми підбираємо якісне обладнання</h3>
+                            <p class="advantages-card__about">Щоб реалізувати наші проекти, ми точно підбираємо обладнання нового покоління. Це
+                                дозволяє інженерам EcoVolt моделювати станції з більшою генерацією
+                                енергії, на 15-20% при однаковій потужності станцій.</p>
+                        </div>
+                    </li>
+                    <li class="advantages__item">
+                        <div class="advantages-card">
+                            <div class="advantages-card__number-wrap">
+                                <svg class="advantages-card__bckgr-icon">
+                                    <use href="./img/sprite.svg#icon-numbered-list"></use>
+                                </svg>
+                                <p class="advantages-card__number">03</p>
+                            </div>
+                            <h3 class="advantages-card__title">Ми використовуємо спеціалізований софт</h3>
+                            <p class="advantages-card__about">Ми використовуємо ліцензійне програмне забезпечення: PVSyst, SketchUP, AutoCAD. Наші
+                                проектанти враховують всі можливі особливості даху. Це значить,
+                                що ми максимально точно визначаємо продуктивність майбутньої станції.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="areas-work">
+            <div class="container">
+                <h2 class="areas-work__title title title-dark title-big-margin">Напрямки нашої діяльності</h2>
+
+                <ul class="areas-work__list">
+                    <li class="areas-work__item">
+                        <div class="areas-work__card">
+                            <svg class="areas-work__icon icon-home" width="209" height="225">
+                                <use href="./img/sprite.svg#areas-work-home"></use>
+                            </svg>
+                            <h3 class="card__title">Приватні домогосподарства</h3>
+                        </div>
+                    </li>
+                    <li class="areas-work__item">
+                        <div class="areas-work__card">
+                            <svg class="areas-work__icon icon-commerce" width="211" height="225">
+                                <use href="./img/sprite.svg#areas-work-commerce"></use>
+                            </svg>
+                            <h3 class="card__title">Бізнес або комерційна сфера</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section about">
+
+            <div class="about__top-part container">
+                <div class="about__top-part_left-side">
+                    <h2 class="about__title title title-dark">Про компанію</h2>
+                    <p class="about__content">Компанія «EcoVolt» — провідний спеціаліст у галузі сонячної енергетики в Україні. Наша компанія
+                        швидко змогла завоювати прихильність та повагу
+                        клієнтів, запроваджуючи у життя технології майбутнього, та роблячи це з високою професійністю та відповідальністю.
+                    </p>
+                </div>
+                <div class="about__top-part_right-side">
+                    <p class="about__label">ECOVOLT</p>
+                    <p class="about__content">В наш час, коли весь світ стурбований збереженням екологічного балансу, всі розвинені країни
+                        починають переходити на альтернативні способи отримання
+                        енергії. І, як показують дослідження та доводить практика, майбутнє — це сонячна енергетика. Цей спосіб дозволяє
+                        отримувати енергію від самої природи,
+                        не завдаючи шкоди довкіллю, та значно економити на паливі.
+                    </p>
+                </div>
+            </div>
+
+            <img class="about__img" src="./img/about/field-of-modules.jpg" alt="field-of-modules">
+
+            <div class="about__bottom-part container">
+                <div class="about__bottom-part-wrap">
+                    <div class="about__bottom-part_left-side">
+                        <p class="about__content">Основний вектор роботи нашої компанії - це встановлення та налаштування сонячних електростанцій.
+                            Найбільшою популярністю у нас користуються сонячні
+                            електростанції під "Зелений тариф". Чому вони? Все просто — такі станції приносять реальний дохід своєму власнику і є
+                            прикладом вдалої інвестиції.
+                            Очікуваний дохід - до 6 тис. доларів.
+                        </p>
+                    </div>
+                    <div class="about__bottom-part_right-side">
+                        <p class="about__content">Стосовно програми "зелений тариф", то вона покликана збільшити частку відновлювальної енергетики на
+                            загальному енергоринку України шляхом
+                            субсидіювання власників установок, які працюють на сонячній чи вітровій енергії.
+                        </p>
+                    </div>
+                </div>
+
+                <form class="form about__form">
+                    <h2 class="form__title">Підберіть сонячні панелі які принесуть прибуток вашому дому.</h2>
+                    <p class="form__about">Заповніть форму нижче і отримайте персональну консультацію від нашого спеціаліста</p>
+
+                    <div class="form__fields-wrap">
+                        <label class="form__fields">
+                            Ваше ім’я
+                            <input class="form__input" type="text">
+                        </label>
+
+                        <label class="form__fields">
+                            Номер телефону
+                            <input class="form__input" type="tel">
+                        </label>
+                    </div>
+
+                    <button class="form__btn" type="submit">Отримати консультацію</button>
+                </form>
+            </div>
+
+        </section>
+
+        <section class="section stages">
+            <div class="container">
+                <h2 class="stages__title title title-light title-big-margin">Як ми працюємо</h2>
+                <ul class="stages__list">
+                    <li class="stages__item">
+                        <div class="stages__card">
+                            <div class="stages-card__number-wrap">
+                                <svg class="stages-card__bckgr-icon">
+                                    <use href="./img/sprite.svg#icon-numbered-list"></use>
+                                </svg>
+                                <p class="stages-card__number">1 етап</p>
+                            </div>
+                            <h3 class="stages-card__title">Знайомство</h3>
+                            <ul class="stages-card__list">
+                                <li class="stages-card__item">Аналізуємо особливості конструкції будинку;</li>
+                                <li class="stages-card__item">Робимо заміри даху за допомогою дрону;</li>
+                                <li class="stages-card__item">Проектуємо 3D модель;</li>
+                                <li class="stages-card__item">Розробляємо рішення для вашого дому;</li>
+                                <li class="stages-card__item">Підбираємо обладнання;</li>
+                                <li class="stages-card__item">Готуємо детальний опис проекту.</li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="stages__item">
+                        <div class="stages__card">
+                            <div class="stages__card">
+                                <div class="stages-card__number-wrap">
+                                    <svg class="stages-card__bckgr-icon">
+                                        <use href="./img/sprite.svg#icon-numbered-list"></use>
+                                    </svg>
+                                    <p class="stages-card__number">2 етап</p>
+                                </div>
+                                <h3 class="stages-card__title">Встановлення</h3>
+                                <ul class="stages-card__list">
+                                    <li class="stages-card__item">Готуємо повний пакет технічної документації;</li>
+                                    <li class="stages-card__item">Супроводжуємо процес узгодження схеми підключення з постачальником електроенергії;
+                                    </li>
+                                    <li class="stages-card__item">Монтуємо та підключаємо обладнання;</li>
+                                    <li class="stages-card__item">Подаємо документи та супроводжуємо процедуру встановлення лічильника постачальником
+                                        електроенергії.</li>
+                                </ul>
+                            </div>
+                    </li>
+                    <li class="stages__item">
+                        <div class="stages__card">
+                            <div class="stages__card">
+                                <div class="stages-card__number-wrap">
+                                    <svg class="stages-card__bckgr-icon">
+                                        <use href="./img/sprite.svg#icon-numbered-list"></use>
+                                    </svg>
+                                    <p class="stages-card__number">3 етап</p>
+                                </div>
+                                <h3 class="stages-card__title">Підключення</h3>
+                                <ul class="stages-card__list">
+                                    <li class="stages-card__item">Підключаємо електростанцію до загальної мережі;</li>
+                                    <li class="stages-card__item">Проводимо фінальне тестування;</li>
+                                    <li class="stages-card__item">Супроводжуємо укладання договору продажу виробленої електроенергії в загальну мережу
+                                        між вами та Постачальником електроенергії.</li>
+                                </ul>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section projects">
+            <div class="projects__wrap-swiper">
+                <div class="container">
+                    <h2 class="projects__title title title-dark title-small-margin">Реалізовані проекти</h2>
+                    <div class="swiper swiper-projects">
+                        <ul class="projects__list swiper-wrapper">
+                            <li class="projects__item swiper-slide">
+                                <div class="projects__card">
+                                    <img class="projects__card-img" src="./img/projects/image.jpg" alt="сонячна станція">
+                                    <div class="projects__card-about">
+                                        <h3 class="projects__card-title">Приватна СЕС</h3>
+                                        <ul class="projects__card-list">
+                                            <li class="projects__card-item">Потужність СЕС: <span>30 кВт</span></li>
+                                            <li class="projects__card-item">Фотоелектричні модулі: <span>Trina 335 Вт.</span></li>
+                                            <li class="projects__card-item">Інвертор: <span>Huawei SUN2000-33KTL</span></li>
+                                            <li class="projects__card-item">Система захисту від короткого замикання та перенапруги:<span>ETI solar
+                                                    protection</span></li>
+                                            <li class="projects__card-item">Система кріплення: <span>PRONT</span></li>
+                                        </ul>
+
+                                        <a class="projects__card-btn" href="#">Детальніше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="projects__item swiper-slide">
+                                <div class="projects__card">
+                                    <img class="projects__card-img" src="./img/projects/image-1.jpg" alt="сонячна станція">
+                                    <div class="projects__card-about">
+                                        <h3 class="projects__card-title">Приватна СЕС</h3>
+                                        <ul class="projects__card-list">
+                                            <li class="projects__card-item">Потужність СЕС: <span>30 кВт</span> </li>
+                                            <li class="projects__card-item">Фотоелектричні модулі: <span>Trina 335 Вт.</span></li>
+                                            <li class="projects__card-item">Інвертор: <span>Huawei SUN2000-33KTL</span></li>
+                                            <li class="projects__card-item">Система захисту від короткого замикання та перенапруги: <span>ETI solar
+                                                    protection</span></li>
+                                            <li class="projects__card-item">Система кріплення: <span>PRONT</span></li>
+                                        </ul>
+
+                                        <a class="projects__card-btn" href="#">Детальніше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="projects__item swiper-slide">
+                                <div class="projects__card">
+                                    <img class="projects__card-img" src="./img/projects/image-2.jpg" alt="сонячна станція">
+                                    <div class="projects__card-about">
+                                        <h3 class="projects__card-title">Приватна СЕС</h3>
+                                        <ul class="projects__card-list">
+                                            <li class="projects__card-item">Потужність СЕС: <span>30 кВт</span> </li>
+                                            <li class="projects__card-item">Фотоелектричні модулі: <span>Trina 335 Вт.</span></li>
+                                            <li class="projects__card-item">Інвертор: <span>Huawei SUN2000-33KTL</span></li>
+                                            <li class="projects__card-item">Система захисту від короткого замикання та перенапруги: <span>ETI solar
+                                                    protection</span></li>
+                                            <li class="projects__card-item">Система кріплення: <span>PRONT</span></li>
+                                        </ul>
+
+                                        <a class="projects__card-btn" href="#">Детальніше</a>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li class="projects__item swiper-slide">
+                                <div class="projects__card">
+                                    <img class="projects__card-img" src="./img/projects/image.jpg" alt="сонячна станція">
+                                    <div class="projects__card-about">
+                                        <h3 class="projects__card-title">Приватна СЕС</h3>
+                                        <ul class="projects__card-list">
+                                            <li class="projects__card-item">Потужність СЕС: <span>30 кВт</span> </li>
+                                            <li class="projects__card-item">Фотоелектричні модулі: <span>Trina 335 Вт.</span></li>
+                                            <li class="projects__card-item">Інвертор: <span>Huawei SUN2000-33KTL</span></li>
+                                            <li class="projects__card-item">Система захисту від короткого замикання та перенапруги: <span>ETI solar
+                                                    protection</span></li>
+                                            <li class="projects__card-item">Система кріплення: <span>PRONT</span></li>
+                                        </ul>
+
+                                        <a class="projects__card-btn" href="#">Детальніше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="projects__item swiper-slide">
+                                <div class="projects__card">
+                                    <img class="projects__card-img" src="./img/projects/image-1.jpg" alt="сонячна станція">
+                                    <div class="projects__card-about">
+                                        <h3 class="projects__card-title">Приватна СЕС</h3>
+                                        <ul class="projects__card-list">
+                                            <li class="projects__card-item">Потужність СЕС: <span>30 кВт</span> </li>
+                                            <li class="projects__card-item">Фотоелектричні модулі: <span>Trina 335 Вт.</span></li>
+                                            <li class="projects__card-item">Інвертор: <span>Huawei SUN2000-33KTL</span></li>
+                                            <li class="projects__card-item">Система захисту від короткого замикання та перенапруги: <span>ETI solar
+                                                    protection</span></li>
+                                            <li class="projects__card-item">Система кріплення: <span>PRONT</span></li>
+                                        </ul>
+
+                                        <a class="projects__card-btn" href="#">Детальніше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="projects__item swiper-slide">
+                                <div class="projects__card">
+                                    <img class="projects__card-img" src="./img/projects/image-2.jpg" alt="сонячна станція">
+                                    <div class="projects__card-about">
+                                        <h3 class="projects__card-title">Приватна СЕС</h3>
+                                        <ul class="projects__card-list">
+                                            <li class="projects__card-item">Потужність СЕС: <span>30 кВт</span> </li>
+                                            <li class="projects__card-item">Фотоелектричні модулі: <span>Trina 335 Вт.</span></li>
+                                            <li class="projects__card-item">Інвертор: <span>Huawei SUN2000-33KTL</span></li>
+                                            <li class="projects__card-item">Система захисту від короткого замикання та перенапруги: <span>ETI solar
+                                                    protection</span></li>
+                                            <li class="projects__card-item">Система кріплення: <span>PRONT</span></li>
+                                        </ul>
+
+                                        <a class="projects__card-btn" href="#">Детальніше</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <div class="projects__swiper-btn-prev">
+                        <svg class="projects__swiper-btn-icon" width="18" height="30">
+                            <use href="./img/sprite.svg#slider-icon-prev"></use>
+                        </svg>
+                    </div>
+                    <div class="projects__swiper-btn-next">
+                        <svg class="projects__swiper-btn-icon" width="18" height="30">
+                            <use href="./img/sprite.svg#slider-icon-next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partners">
+
+            <div class="container">
+                <h2 class="partners__title title title-light title-small-margin">Наші партнери</h2>
+                <div class="partners__wrap-swiper">
+                    <div class="swiper swiper-partners">
+                        <ul class="partners__list swiper-wrapper">
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Huawei</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">SunPower Corporation</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Canadian Solar</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Longi Solar</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Kripter</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Pront</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Sunfix</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="partners__swiper-btn-prev">
+                        <svg class="partners__swiper-btn-icon" width="9" height="15">
+                            <use href="./img/sprite.svg#slider-icon-prev"></use>
+                        </svg>
+                    </div>
+                    <div class="partners__swiper-btn-next">
+                        <svg class="partners__swiper-btn-icon" width="9" height="15">
+                            <use href="./img/sprite.svg#slider-icon-next"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section news">
+            <div class="container">
+                <h2 class="news__title title title-dark title-small-margin">Останні новини компанії</h2>
+                <ul class="news__list">
+                    <li class="news__item">
+                        <a href="#">
+                            <article>
+                                <img src="./img/news/news1.jpg" alt="домашня сонячна станція">
+                                <div class="news__item-about">
+                                    <time datetime="2022-05-23">23.05.2022</time>
+                                    <h3>Приватні домогосподарства</h3>
+                                    <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                        dolore aliqua.</p>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="news__item">
+                        <article>
+                            <img src="./img/news/news2.jpg" alt="комерційна сонячна станція">
+                            <div class="news__item-about">
+                                <time datetime="2022-05-22">22.05.2022</time>
+                                <h3>Бізнес або комерційна сфера</h3>
+                                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore aliqua.</p>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+
+        </section>
+
+
+    </main>
+
+    <footer></footer>
+
+    <script src="./js/mobile-menu.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" type="module"></script>
+    <script src="./js/sliders.js" type="module"></script>
+
+</body>
+
+</html>

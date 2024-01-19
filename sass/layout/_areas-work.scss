@@ -1,0 +1,90 @@
+.areas-work {
+    @media screen and (max-width: 1229px) {
+        padding-bottom: 86px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding-bottom: 124px;
+    }
+}
+
+.areas-work__title {
+    text-align: center;
+}
+
+.areas-work__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 1px;
+    }
+}
+
+.areas-work__item {
+    background-color: $accent-color;
+
+    @media screen and (max-width: 767px) {
+        &+& {
+            margin-top: 2px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: calc((100% - 1px)/2);
+    }
+
+    @media screen and (max-width: 1229px) {
+        padding-top: 86px;
+        padding-bottom: 86px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding-top: 112px;
+        padding-bottom: 102px;
+    }
+}
+
+.areas-work__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.areas-work__icon {
+    stroke: $main-light-color;
+    stroke-width: 1.5px;
+    fill: none;
+    margin-bottom: 72px;
+}
+
+// .icon-home {}
+
+// .icon-commerce {}
+
+.card__title {
+    position: relative;
+    text-align: center;
+
+    font-weight: 400;
+    line-height: calc(29px/24px);
+    letter-spacing: 0.05em;
+
+    color: $main-light-color;
+
+    &::after {
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        content: "";
+        background-color: $main-light-color;
+        width: 100%;
+        height: 1px;
+    }
+
+    @media screen and (max-width: 1229px) {
+        font-size: 18px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        font-size: 24px;
+    }
+}

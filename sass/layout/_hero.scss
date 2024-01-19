@@ -1,0 +1,126 @@
+.hero {
+    height: 100%;
+    background-color: $accent-color;
+}
+
+.hero-cont {
+    padding-bottom: 256px;
+    margin: 0 auto;
+
+    // макет
+    background-image: url(../img/hero/hero3.png), url(../img/hero/lines2.svg);
+    background-position: bottom, top right;
+    max-width: 1400px;
+
+    // фото майдана
+    // background-image: url(../img/майдан/Майдан_автономна_СЕС_10.jpg);
+    // background-size: cover;
+
+
+    background-repeat: no-repeat;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 160px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 235px;
+    }
+}
+
+
+// === варіант без додаткового контейнера старт ===
+// .hero {
+//     height: 100%;
+//     background-color: $accent-color;
+//     background-image: url(../img/hero/hero3.png), url(../img/hero/lines2.svg);
+//     background-position: bottom, top right;
+//     background-repeat: no-repeat;
+
+//     padding-bottom: 256px;
+
+//     @media screen and (max-width: 767px) {
+//         padding-top: 160px;
+//     }
+
+//     @media screen and (min-width: 768px) {
+//         padding-top: 235px;
+//     }
+
+//     // фото майдана
+//     // background-image: url(../img/майдан/Майдан_автономна_СЕС_10.jpg);
+//     // background-size: cover;
+// }
+// === варіант без додаткового контейнера енд ===
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__title {
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: $main-light-color;
+    max-width: 570px;
+    margin-bottom: 40px;
+
+    @media screen and (max-width: 479px) {
+        font-size: 30px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 44px;
+    }
+}
+
+.hero__link {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: $main-light-color;
+    display: flex;
+    align-items: center;
+    margin-bottom: 38px;
+}
+
+.hero__link-icon {
+    margin-right: 10px;
+
+    --color1: rgba(255, 255, 255, 0.75);
+    --color2: #fff;
+    --color3: #FFAD00;
+}
+
+.hero__btn {
+    display: block;
+    border: none;
+    cursor: pointer;
+
+    background: $secondary-dark-color;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(28px/16px);
+    letter-spacing: 0.05em;
+    color: $main-light-color;
+
+    @media screen and (max-width: 479px) {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding: 16px 36px;
+    }
+}

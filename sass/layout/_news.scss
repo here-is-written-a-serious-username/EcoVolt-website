@@ -1,0 +1,45 @@
+// .news__title {
+
+// }
+
+.news__list {
+    display: flex;
+    // flex-wrap: wrap;
+    gap: 40px;
+}
+
+.news__item-about {
+    background: $background-dark;
+    padding: 44px 32px 54px;
+
+    time {
+        display: block;
+        color: #CECECE;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        margin-bottom: 14px;
+    }
+
+    h3 {
+        color: $main-light-color;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.3px;
+        margin-bottom: 18px;
+    }
+
+    p {
+        color: rgba(228, 228, 228, 0.88);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: calc(19.6px/14px);
+        letter-spacing: 0.28px;
+    }
+}
+
+.news__item {
+    width: calc((100% - 40px)/2);
+}

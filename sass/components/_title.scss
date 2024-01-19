@@ -1,0 +1,41 @@
+.title {
+
+    font-weight: 600;
+    line-height: calc(50px/42px);
+
+    @media screen and (max-width: 767px) {
+        font-size: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 42px;
+    }
+}
+
+.title-light {
+    color: $main-light-color;
+}
+
+.title-dark {
+    color: $main-dark-color;
+}
+
+.title-big-margin {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 48px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 126px;
+    }
+}
+
+.title-small-margin {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 80px;
+    }
+}

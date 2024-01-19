@@ -1,0 +1,98 @@
+.partners {
+    background-color: $accent-color;
+}
+
+.partners__title {
+    text-align: center;
+}
+
+
+
+.partners__wrap-swiper {
+    position: relative;
+
+    @media screen and (max-width: 479px) {
+        padding: 0 26px;
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        padding: 0 36px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        padding: 0 44px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding: 0 102px;
+    }
+
+}
+
+// .swiper-partners {
+//     max-width: 996px;
+//     margin-left: auto;
+//     margin-right: auto;
+// }
+
+.partners__item {
+    @media screen and (max-width: 479px) {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    @media screen and (min-width: 480px) {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+}
+
+.partners__card {
+    background-color: $main-light-color;
+    // width: 233px;
+    aspect-ratio: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+    // padding: 28px 22px 26px 44px;
+}
+
+.partners__swiper-btn-prev,
+.partners__swiper-btn-next {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    cursor: pointer;
+    background-color: $main-light-color;
+
+    @media screen and (max-width: 479px) {
+        width: 36px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 46px;
+    }
+
+    .partners__swiper-btn-icon {
+        fill: $accent-color;
+    }
+}
+
+.partners__swiper-btn-prev {
+    left: -10px;
+}
+
+.partners__swiper-btn-next {
+    right: -10px;
+}

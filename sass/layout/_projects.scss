@@ -1,0 +1,115 @@
+:root {
+    --swiper-pagination-color: #FFAD00;
+}
+
+.projects__wrap-swiper {
+    position: relative;
+    max-width: 1390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-projects {
+    padding-bottom: 40px;
+}
+
+.projects__swiper-btn-prev,
+.projects__swiper-btn-next {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+    width: fit-content;
+    padding: 8px;
+
+
+    .projects__swiper-btn-icon {
+        fill: $accent-color;
+    }
+}
+
+.projects__swiper-btn-prev {
+    left: 0;
+}
+
+.projects__swiper-btn-next {
+    right: 0;
+}
+
+.projects__item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+
+.projects__card-img {
+    width: 100%;
+}
+
+.projects__title {
+
+    text-align: center;
+
+}
+
+.projects__card-about {
+    padding: 28px 22px 26px 44px;
+    background-color: $background-dark;
+}
+
+.projects__card-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: calc(22px/18px);
+    color: $main-light-color;
+
+    margin-bottom: 20px;
+}
+
+.projects__card-list {
+    margin-bottom: 26px;
+    list-style: disc inside;
+}
+
+.projects__card-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(20px/14px);
+    color: $main-light-color;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &::marker {
+        color: $accent-color;
+        font-size: 12px;
+    }
+
+    &>span {
+        font-weight: 300;
+    }
+
+    // тут костиль для того щоб зменшити відстань між маркером і текстом, подумай як переробити краще і чи він тобі взагалі треба 
+
+    // &>p {
+    //     display: inline;
+    //     margin-left: -6px;
+    // }
+}
+
+
+.projects__card-btn {
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 12px 36px 14px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(17px/14px);
+
+    color: $main-light-color;
+    background-color: $accent-color;
+}

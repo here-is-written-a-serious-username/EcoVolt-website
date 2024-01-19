@@ -1,0 +1,96 @@
+.stages {
+    background-color: $background-dark;
+    background-image: url(../img/SVG/stages.svg);
+}
+
+.stages__title {
+
+    // @media screen and (max-width: 767px) {
+    //     margin-bottom: 48px;
+    // }
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        margin-bottom: 88px;
+    }
+
+    // @media screen and (min-width: 1230px) {
+    //     margin-bottom: 126px;
+    // }
+}
+
+.stages__list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 4%;
+    }
+}
+
+.stages__item {
+    @media screen and (min-width: 768px) {
+        width: 32%;
+    }
+
+    margin-bottom: 48px;
+}
+
+.stages-card__number-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.stages-card__bckgr-icon {
+    stroke: rgba(255, 255, 255, 0.15);
+    // width="110" height="98"
+
+    @media screen and (max-width: 767px) {
+        width: 88px;
+        height: 78px;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 110px;
+        height: 98px;
+    }
+}
+
+.stages-card__number {
+    position: absolute;
+    left: 12px;
+
+    font-family: $secondary-font;
+    font-weight: 600;
+
+    line-height: calc(44px/36px);
+
+    color: $accent-color;
+
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 36px;
+    }
+}
+
+.stages-card__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.36;
+    color: $main-light-color;
+    margin-bottom: 42px;
+}
+
+.stages-card__list {
+    list-style: disc;
+    padding-left: 18px;
+}
+
+.stages-card__item {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ECECEC;
+}
