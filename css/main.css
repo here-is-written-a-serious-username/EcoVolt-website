@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* font */
 /* color */
 *,
@@ -326,30 +327,34 @@ label {
 
 .hero {
   height: 100%;
-  background-color: #FFAD00;
 }
 
-.hero-cont {
+.hero {
+  height: 100%;
   padding-bottom: 256px;
-  margin: 0 auto;
-  background-image: url(../img/hero/hero3.png), url(../img/hero/lines2.svg);
-  background-position: bottom, top right;
-  max-width: 1400px;
-  background-repeat: no-repeat;
+  background-image: url(../img/майдан/Майдан_автономна_СЕС_10.jpg);
+  background-size: cover;
+  background-position: center;
 }
 @media screen and (max-width: 767px) {
-  .hero-cont {
+  .hero {
     padding-top: 160px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero-cont {
+  .hero {
     padding-top: 235px;
   }
 }
 
+.hero-cont {
+  position: relative;
+  z-index: 1;
+}
+
 video {
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
