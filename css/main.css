@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* font */
 /* color */
 *,
@@ -327,40 +326,26 @@ label {
 
 .hero {
   height: 100%;
+  background-color: #FFAD00;
 }
 
-.hero {
-  height: 100%;
+.hero-cont {
   padding-bottom: 256px;
-  background-image: url(../img/майдан/Майдан_автономна_СЕС_10.jpg);
-  background-size: cover;
-  background-position: center;
+  margin: 0 auto;
+  height: 100%;
+  background-image: url(../img/hero/hero4.png), url(../img/hero/lines2.svg);
+  background-position: bottom, top right;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 767px) {
-  .hero {
+  .hero-cont {
     padding-top: 160px;
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero-cont {
     padding-top: 235px;
   }
-}
-
-.hero-cont {
-  position: relative;
-  z-index: 1;
-}
-
-video {
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .hero__title {
@@ -1202,13 +1187,13 @@ video {
 }
 @media screen and (max-width: 479px) {
   .partners__swiper-btn-prev,
-  .partners__swiper-btn-next {
+.partners__swiper-btn-next {
     width: 36px;
   }
 }
 @media screen and (min-width: 480px) {
   .partners__swiper-btn-prev,
-  .partners__swiper-btn-next {
+.partners__swiper-btn-next {
     width: 46px;
   }
 }
