@@ -1,10 +1,6 @@
 .hero {
     height: 100%;
     background-color: $accent-color;
-}
-
-// для жовтого фону і ліній старт
-.hero-cont {
     padding-bottom: 256px;
     margin: 0 auto;
     height: 100%;
@@ -23,30 +19,9 @@
     }
 }
 
-// для жовтого фону і ліній енд
-
-// === варіант без додаткового контейнера старт ===
-// .hero {
-//     height: 100%;
-//     // background-color: $accent-color;
-//     // background-image: url(../img/hero/hero3.png), url(../img/hero/lines2.svg);
-//     // background-position: bottom, top right;
-//     // background-repeat: no-repeat;
-
-//     padding-bottom: 256px;
-
-//     @media screen and (max-width: 767px) {
-//         padding-top: 160px;
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         padding-top: 235px;
-//     }
-
 //     background-image: url(../img/майдан/Майдан_автономна_СЕС_10.jpg);
 //     background-size: cover;
 //     background-position: center;
-// }
 
 // .hero-cont {
 //     position: relative;
@@ -62,9 +37,6 @@
 //     height: 100%;
 //     object-fit: cover;
 // }
-
-// === варіант без додаткового контейнера енд ===
-
 
 .hero__title {
     font-weight: 600;
