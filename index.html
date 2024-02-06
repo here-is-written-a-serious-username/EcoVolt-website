@@ -15,7 +15,6 @@
         referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css" />
 
     <link rel="stylesheet" href="./css/main.min.css">
 
@@ -402,14 +401,19 @@
         </section>
 
         <section class="section partners">
-
             <div class="container">
                 <h2 class="partners__title title title-light title-small-margin">Наші партнери</h2>
                 <div class="partners__wrap-swiper">
                     <div class="swiper swiper-partners">
                         <ul class="partners__list swiper-wrapper">
                             <li class="partners__item swiper-slide">
+                                <div class="partners__card">Mak Energy</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
                                 <div class="partners__card">Huawei</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Deye Inverter Technology</div>
                             </li>
                             <li class="partners__item swiper-slide">
                                 <div class="partners__card">SunPower Corporation</div>
@@ -418,7 +422,13 @@
                                 <div class="partners__card">Canadian Solar</div>
                             </li>
                             <li class="partners__item swiper-slide">
-                                <div class="partners__card">Longi Solar</div>
+                                <div class="partners__card">JA Solar</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Trina Solar</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Jinko Solar</div>
                             </li>
                             <li class="partners__item swiper-slide">
                                 <div class="partners__card">Kripter</div>
@@ -428,6 +438,9 @@
                             </li>
                             <li class="partners__item swiper-slide">
                                 <div class="partners__card">Sunfix</div>
+                            </li>
+                            <li class="partners__item swiper-slide">
+                                <div class="partners__card">Namato</div>
                             </li>
                         </ul>
                     </div>
@@ -482,86 +495,86 @@
             <div class="container">
                 <h2 class="title title-dark title-big-margin">Відповіді на часті запитання</h2>
 
-                <!-- <button class="accordion">Що таке СЕС?</button>
-                <div class="panel">
-                    <p>СЕС (сонячна електростанція) — це комплекс технічного обладнання, яке здатне акумулювати сонячну енергію і перетворювати її в
-                        електричну. Стандартна
-                        система, що працює за рахунок енергії сонця (геліоенергії), складається з декількох конструктивних елементів.
-
-                        До них відносяться:
-                        панель — набір певної кількості напівпровідникових осередків, покладених на міцну основу, покриту високоміцним склом;
-                        контролер — пристрій, що відстежує потужність заряду;
-                        накопичувачі (акумуляторні батареї);
-                        інвертор — прилад, що перетворює постійний струм в перемінний.
-
-                        Компанія Solars Re-Energy Group пропонує готові комплекти сонячних електростанцій, встановити які можна на дахах, фасадах
-                        будинків, на спеціальних
-                        конструкціях або відведених для цієї мети територіях.
-                    </p>
-                </div>
-
-                <button class="accordion">Чому варто придбати сонячну електростанцію?</button>
-                <div class="panel">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique provident, accusantium id eligendi, porro quo nemo corrupti
-                        veniam ipsa odit cumque, voluptates nesciunt! Aut iure ratione recusandae quis perferendis veritatis.</p>
-                </div>
-
-                <button class="accordion">Який дохід принесе мені сонячна електростанція під зелений тариф?</button>
-                <div class="panel">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ratione nam tempora est consectetur provident saepe, eligendi at
-                        labore pariatur. Laudantium veritatis repudiandae totam labore debitis iste aliquam quaerat corporis!</p>
-                </div> -->
-
-
-                <div class="accordion-container">
-                    <div class="ac">
-                        <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Що таке СЕС?</button>
-                        </h2>
+                <ul class="accordion-container">
+                    <li class="ac">
+                        <h3 class="ac-header">
+                            <div type="button" tabindex="0" class="ac-trigger" data-icon-id="icon1">
+                                <span>Що таке СЕС?</span>
+                                <div class="ac-trigger__icon-cont">
+                                    <svg class="ac-trigger__icon" width="16" height="16" id="icon1">
+                                        <use href="./img/sprite.svg#icon+"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </h3>
                         <div class="ac-panel">
                             <p class="ac-text">СЕС (сонячна електростанція) — це комплекс технічного обладнання, яке здатне акумулювати сонячну
                                 енергію і перетворювати її в
                                 електричну. Стандартна
                                 система, що працює за рахунок енергії сонця (геліоенергії), складається з декількох конструктивних елементів.
-
-                                До них відносяться:
+                            </p>
+                            <p class="ac-text">До них відносяться:
                                 панель — набір певної кількості напівпровідникових осередків, покладених на міцну основу, покриту високоміцним склом;
                                 контролер — пристрій, що відстежує потужність заряду;
                                 накопичувачі (акумуляторні батареї);
                                 інвертор — прилад, що перетворює постійний струм в перемінний.
-
-                                Компанія Solars Re-Energy Group пропонує готові комплекти сонячних електростанцій, встановити які можна на дахах,
+                            </p>
+                            <p class="ac-text">Компанія Solars Re-Energy Group пропонує готові комплекти сонячних електростанцій, встановити які можна
+                                на дахах,
                                 фасадах
                                 будинків, на спеціальних
-                                конструкціях або відведених для цієї мети територіях.</p>
+                                конструкціях або відведених для цієї мети територіях.
+                            </p>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="ac">
-                        <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Чому варто придбати сонячну електростанцію?</button>
-                        </h2>
+                    <li class="ac">
+                        <h3 class="ac-header">
+                            <div type="button" tabindex="0" class="ac-trigger" data-icon-id="icon2">
+                                <span>Чому варто придбати сонячну електростанцію?</span>
+                                <div class="ac-trigger__icon-cont">
+                                    <svg class="ac-trigger__icon" width="16" height="16" id="icon2">
+                                        <use href="./img/sprite.svg#icon+"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </h3>
                         <div class="ac-panel">
                             <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quasi beatae aspernatur similique! Natus
-                                soluta velit expedita quisquam quo ipsam tempore aperiam pariatur. Hic, excepturi sed tempora soluta enim culpa.</p>
+                                soluta velit expedita quisquam quo ipsam tempore aperiam pariatur. Hic, excepturi sed tempora soluta enim culpa.
+                            </p>
+                            <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quasi beatae aspernatur similique! Natus
+                                soluta velit expedita quisquam quo ipsam tempore aperiam pariatur. Hic, excepturi sed tempora soluta enim culpa.
+                            </p>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="ac">
-                        <h2 class="ac-header">
-                            <button type="button" class="ac-trigger">Який дохід принесе мені сонячна електростанція під зелений тариф?</button>
-                        </h2>
+                    <li class="ac">
+                        <h3 class="ac-header">
+                            <div type="button" tabindex="0" class="ac-trigger" data-icon-id="icon3">
+                                <span>Який дохід принесе мені сонячна електростанція під зелений тариф?</span>
+                                <div class="ac-trigger__icon-cont">
+                                    <svg class="ac-trigger__icon" width="16" height="16" id="icon3">
+                                        <use href="./img/sprite.svg#icon+"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                        </h3>
                         <div class="ac-panel">
                             <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quasi beatae aspernatur similique! Natus
-                                soluta velit expedita quisquam quo ipsam tempore aperiam pariatur. Hic, excepturi sed tempora soluta enim culpa.</p>
+                                soluta velit expedita quisquam quo ipsam tempore aperiam pariatur. Hic, excepturi sed tempora soluta enim culpa.
+                            </p>
+                            <p class="ac-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet quasi beatae aspernatur similique! Natus
+                                soluta velit expedita quisquam quo ipsam tempore aperiam pariatur. Hic, excepturi sed tempora soluta enim culpa.
+                            </p>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
 
             </div>
         </section>
 
-        <section class="section question">
+        <section class="section">
 
         </section>
 

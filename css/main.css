@@ -1184,13 +1184,13 @@ label {
 }
 @media screen and (max-width: 479px) {
   .partners__swiper-btn-prev,
-.partners__swiper-btn-next {
+  .partners__swiper-btn-next {
     width: 36px;
   }
 }
 @media screen and (min-width: 480px) {
   .partners__swiper-btn-prev,
-.partners__swiper-btn-next {
+  .partners__swiper-btn-next {
     width: 46px;
   }
 }
@@ -1245,4 +1245,86 @@ label {
 
 .news__item {
   width: calc((100% - 40px) / 2);
+}
+
+.ac {
+  margin-top: 8px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.ac .ac-header {
+  margin: 0;
+  padding: 0;
+}
+.ac .ac-trigger {
+  font-weight: 600;
+  font-size: 26px;
+  color: #101214;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 8px 32px 8px 8px;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-transition: color 0.25s ease;
+  transition: color 0.25s ease;
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+}
+.ac .ac-trigger:focus {
+  color: #8a8a8a;
+}
+.ac .ac-panel {
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
+}
+.ac .ac-panel .ac-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #101214;
+  padding: 8px;
+  margin: 0;
+}
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+.ac.is-active > .ac-header .ac-trigger .ac-trigger__icon {
+  rotate: 45deg;
+}
+
+.ac-trigger__icon-cont {
+  width: 44px;
+  height: 44px;
+  background-color: #FFAD00;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+
+.ac-trigger__icon {
+  fill: #fff;
 }/*# sourceMappingURL=main.css.map */
