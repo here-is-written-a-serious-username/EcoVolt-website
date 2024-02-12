@@ -18,7 +18,6 @@ $color-black: #111;
     // Trigger class
     .ac-trigger {
         font-weight: 600;
-        font-size: 26px;
         color: $main-dark-color;
 
         display: flex;
@@ -29,12 +28,25 @@ $color-black: #111;
         padding: 8px 32px 8px 8px;
         cursor: pointer;
         background-color: transparent;
-        transition: color .25s ease;
+        transition: color 250ms ease;
         text-decoration: none;
         margin: 0;
         border: 0;
 
-        &:focus {
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1229px) {
+            font-size: 22px;
+        }
+
+        @media screen and (min-width: 1230px) {
+            font-size: 26px;
+        }
+
+        &:focus,
+        &:hover {
             color: $color-grey;
         }
     }
@@ -70,14 +82,14 @@ $color-black: #111;
 
         &>.ac-header .ac-trigger {
             .ac-trigger__icon {
-                rotate: 45deg;
+                transform: rotate(-225deg);
             }
         }
     }
 }
 
-
 .ac-trigger__icon-cont {
+    flex-shrink: 0;
     width: 44px;
     height: 44px;
     background-color: $accent-color;
@@ -89,4 +101,5 @@ $color-black: #111;
 
 .ac-trigger__icon {
     fill: #fff;
+    transition: transform 250ms ease;
 }

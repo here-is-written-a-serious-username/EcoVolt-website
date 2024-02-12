@@ -6,16 +6,18 @@
     height: 100%;
 
     background-image: url(../img/hero/hero4.png), url(../img/hero/lines2.svg);
-    background-position: bottom, top right;
+    // background-position: bottom, top right;
     // max-width: 1400px;
     background-repeat: no-repeat;
 
     @media screen and (max-width: 767px) {
         padding-top: 160px;
+        background-position: bottom right, top right;
     }
 
     @media screen and (min-width: 768px) {
         padding-top: 235px;
+        background-position: bottom, top right;
     }
 }
 
