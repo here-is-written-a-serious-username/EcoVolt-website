@@ -49,13 +49,14 @@
 
 .partners__card {
     background-color: $main-light-color;
-    // width: 233px;
     aspect-ratio: 2;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 10px;
 
+    // width: 233px;
     // padding: 28px 22px 26px 44px;
 }
 

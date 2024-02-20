@@ -27,7 +27,7 @@
         <header class="header">
             <div class="container">
                 <nav class="header__nav">
-                    <a class="logo header__logo" href="./index.html" lang="en">
+                    <a class="header__logo" href="./index.html" lang="en">
                         <span class="logo-light-part">ECO</span>
                         <span class="logo-dark-part">VOLT</span>
                     </a>
@@ -413,10 +413,10 @@
                                 <div class="partners__card">Huawei</div>
                             </li>
                             <li class="partners__item swiper-slide">
-                                <div class="partners__card">Deye Inverter Technology</div>
+                                <div class="partners__card">Deye Inverter <br> Technology</div>
                             </li>
                             <li class="partners__item swiper-slide">
-                                <div class="partners__card">SunPower Corporation</div>
+                                <div class="partners__card">SunPower <br> Corporation</div>
                             </li>
                             <li class="partners__item swiper-slide">
                                 <div class="partners__card">Canadian Solar</div>
@@ -574,13 +574,90 @@
             </div>
         </section>
 
-        <section class="section final-question">
-            <div class="container"></div>
+        <section class="final-question">
+            <div class="container final-question-cont">
+                <div class="final-question__title-wrap">
+                    <h2 class="final-question__title">У вас залишились запитання?</h2>
+                </div>
+                <div class="final-question__about-wrap">
+                    <p class="final-question__about-content">Наші фахівці завжди готові допомогти і проконсультувати вас, просто залиште заявку.</p>
+                    <button class="final-question__about-btn">Залишити заявку</button>
+                </div>
+            </div>
         </section>
-
     </main>
 
-    <footer class="section footer"></footer>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__feedback">
+                <a class="footer__logo" href="./index.html" lang="en">
+                    <span class="footer__logo-light-part">ECO</span>
+                    <span class="footer__logo-accent-part">VOLT</span>
+                </a>
+                <p class="feedback-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore aliqua.</p>
+                <button class="feedback-btn" type="button"> Зворотній зв’язок</button>
+            </div>
+            <div class="footer__contact-info">
+                <h3 class="contact-info__title">Контактна інформація</h3>
+                <ul class="contacts-list">
+                    <li class="contacts-list__item">
+                        <a class="contacts-link" href="mailto:yuriy@ecovolt.energy">
+                            <svg class="contacts-icon" width="17" height="16">
+                                <use href="./img/sprite.svg#icon-mail"></use>
+                            </svg>
+                            yuriy@ecovolt.energy</a>
+                    </li>
+                    <li class="contacts-list__item">
+                        <a class="contacts-link" href="tel:+380503722605">
+                            <svg class="contacts-icon" width="15" height="15">
+                                <use href="./img/sprite.svg#icon-phone"></use>
+                            </svg>
+                            +38 (050) 37-22-605</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__address-links">
+                <ul class="social-list">
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="https://www.facebook.com/ecovolt.energy" target="_blank" rel="noreferrer noopener">
+                            <svg class="social-list__icon" width="35" height="35">
+                                <use href="./img/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-list__item">
+                        <a class="social-list__link" href="https://www.instagram.com/ecovolt.energy/" target="_blank" rel="noreferrer noopener">
+                            <svg class="social-list__icon" width="35" height="35">
+                                <use href="./img/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <!-- <li class="social-list__item">
+                            <a class="social-list__link" href="https://t.me/" target="_blank" rel="noreferrer noopener">
+                                <svg class="social-list__icon" width="48" height="48">
+                                    <use href="./img/sprite.svg#telegram"></use>
+                                </svg>
+                            </a>
+                        </li> -->
+                </ul>
+                <div>
+                    <a class="adrs-location-link" href="https://maps.app.goo.gl/bQ8ikzSLeiaqRKTc7" target="_blank" rel="noopener noreferrel">
+                        <svg class="adrs-location-link__icon" width="20" height="18">
+                            <use href="./img/sprite.svg#icon-location"></use>
+                        </svg>
+                        вулиця Баб'яка 56, Ужгород</a>
+
+                    <p class="working-hours"><svg class="working-hours__icon" width="14" height="14">
+                            <use href="./img/sprite.svg#icon-clock"></use>
+                        </svg>
+                        Пн-Пт: 8:30-18:00</p>
+                </div>
+            </div>
+        </div>
+        <p class="c">© 2024 All Rights Reserved</p>
+    </footer>
+
 
     <script src="./js/mobile-menu.js" type="module"></script>
 

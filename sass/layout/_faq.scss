@@ -3,6 +3,21 @@ $color-light-grey: #eee;
 $color-grey: #8a8a8a;
 $color-black: #111;
 
+.accordion-container {
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        padding: 0 40px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding: 0 80px;
+    }
+}
+
 .ac {
     margin-top: 8px;
     border-bottom: 1px solid $color-light-grey;
@@ -25,7 +40,7 @@ $color-black: #111;
         align-items: center;
 
         width: 100%;
-        padding: 8px 32px 8px 8px;
+        padding: 8px;
         cursor: pointer;
         background-color: transparent;
         transition: color 250ms ease;

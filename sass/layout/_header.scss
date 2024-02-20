@@ -23,10 +23,11 @@
     align-items: center;
 }
 
-.logo {
+.header__logo {
     font-family: $secondary-font;
     font-size: 28px;
     line-height: calc(34px/28px);
+    user-select: none;
 
     .logo-light-part {
         color: $main-light-color;
