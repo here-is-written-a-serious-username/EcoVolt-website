@@ -1,10 +1,4 @@
 // .about {
-//     margin-left: auto;
-//     margin-right: auto;
-//     background-image: url(../img/about/field-of-modules.jpg);
-//     max-width: 1400px;
-//     background-repeat: no-repeat;
-//     background-position: center, center;
 // }
 
 .about__top-part {
@@ -19,7 +13,7 @@
     }
 }
 
-.about__top-part_left-side {
+.about__top-part_first-block {
     @media screen and (max-width: 767px) {
         margin-bottom: 24px;
     }
@@ -29,7 +23,7 @@
     }
 }
 
-.about__top-part_right-side {
+.about__top-part_second-block {
     @media screen and (min-width: 768px) {
         width: 50%;
     }
@@ -91,15 +85,10 @@
     color: $main-dark-color;
 }
 
-.about__content:first-child {
-    margin-bottom: 50px;
-}
-
 
 
 .about__img {
     // max-width: 1400px;
-
     margin-left: auto;
     margin-right: auto;
     object-fit: cover;
@@ -128,7 +117,9 @@
     }
 }
 
-.about__bottom-part_left-side {
+.about__bottom-part_first-block {
+    margin-bottom: 50px;
+
     @media screen and (min-width: 768px) and (max-width: 1229px) {
         width: 40%;
     }
@@ -138,7 +129,7 @@
     }
 }
 
-.about__bottom-part_right-side {
+.about__bottom-part_second-block {
     @media screen and (min-width: 768px) and (max-width: 1229px) {
         width: 50%;
     }

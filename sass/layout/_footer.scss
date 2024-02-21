@@ -1,12 +1,30 @@
 .footer {
-    padding-top: 118px;
     padding-bottom: 36px;
     background-color: $background-dark;
+
+    @media screen and (max-width: 1229px) {
+        padding-top: 80px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        padding-top: 120px;
+    }
 }
 
 .footer__container {
-    display: flex;
     margin-bottom: 84px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+}
+
+
+
+.footer__feedback {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 36px;
+    }
 }
 
 .footer__logo {
@@ -27,7 +45,15 @@
 }
 
 .feedback-about {
-    max-width: 280px;
+
+    @media screen and (max-width: 1229px) {
+        max-width: 220px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        width: 280px;
+    }
+
     margin-bottom: 24px;
     font-weight: 400;
     font-size: 14px;
@@ -54,15 +80,31 @@
     }
 }
 
+
+
 .footer__contact-info {
-    margin-left: auto;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-left: auto;
+    }
 }
 
 .contact-info__title {
-    margin-bottom: 44px;
     font-weight: 600;
     font-size: 18px;
     color: $main-light-color;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 44px;
+    }
+
 }
 
 .contacts-list__item+.contacts-list__item {
@@ -88,8 +130,17 @@
     }
 }
 
+
+
 .footer__address-links {
-    margin-left: 84px;
+
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
+        margin-left: 24px;
+    }
+
+    @media screen and (min-width: 1230px) {
+        margin-left: 84px;
+    }
 }
 
 .social-list {
@@ -140,8 +191,12 @@
     }
 }
 
-.working-hours {
+.adrs-location-link__icon {
+    margin-left: -2px;
+    // костиль, крива свг
+}
 
+.working-hours {
     .working-hours__icon {
         stroke: $accent-color;
     }
@@ -149,7 +204,7 @@
 
 
 
-.c {
+.copyright {
     text-align: center;
     font-weight: 500;
     font-size: 12px;
