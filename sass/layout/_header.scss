@@ -93,6 +93,7 @@
     letter-spacing: 0.05em;
 
     color: $main-light-color;
+    transition: color 250ms ease-in-out;
 
     @media screen and (max-width: 767px) {
         font-size: 22px;
@@ -100,6 +101,11 @@
 
     @media screen and (min-width: 768px) {
         font-size: 15px;
+    }
+
+    &:hover,
+    &:focus {
+        color: $secondary-dark-color;
     }
 }
 
@@ -124,7 +130,8 @@
         display: block;
         height: 2px;
         background-color: $main-light-color;
-        transition: transform 250ms linear;
+        transition: transform 250ms linear,
+            background-color 250ms ease-in-out;
     }
 
     &::before,
@@ -135,7 +142,7 @@
         width: 100%;
         height: 2px;
         background-color: $main-light-color;
-        transition: transform 250ms linear;
+        transition: transform 250ms linear, background-color 250ms ease-in-out;
     }
 
     &::before {
@@ -157,6 +164,21 @@
 
         &::after {
             transform: rotate(45deg) translateY(-8px);
+        }
+    }
+
+    &:hover,
+    &:focus {
+        .btn-burger {
+            background-color: $secondary-dark-color;
+        }
+
+        &::before {
+            background-color: $secondary-dark-color;
+        }
+
+        &::after {
+            background-color: $secondary-dark-color;
         }
     }
 }

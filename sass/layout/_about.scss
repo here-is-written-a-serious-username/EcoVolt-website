@@ -111,6 +111,10 @@
 }
 
 .about__bottom-part-wrap {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1229px) {
         display: flex;
         column-gap: 10%;
@@ -118,7 +122,14 @@
 }
 
 .about__bottom-part_first-block {
-    margin-bottom: 50px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 50px;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1229px) {
         width: 40%;
