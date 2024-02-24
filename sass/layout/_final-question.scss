@@ -84,13 +84,13 @@
         line-height: 1.86;
         background-color: $main-light-color;
         color: #252323;
+        cursor: pointer;
 
-        transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+        transition: color 250ms ease-in-out;
 
         &:hover,
         &:focus {
-            color: $main-light-color;
-            background-color: $secondary-dark-color;
+            color: $accent-color-hover;
         }
     }
 }

@@ -23,18 +23,37 @@
     width: fit-content;
     padding: 8px;
 
-
     .projects__swiper-btn-icon {
         fill: $accent-color;
+        transition: fill 250ms ease-in-out,
+            transform 50ms ease-in-out;
+    }
+
+    &:hover {
+        .projects__swiper-btn-icon {
+            fill: $accent-color-hover;
+        }
     }
 }
 
 .projects__swiper-btn-prev {
     left: 0;
+
+    &:hover {
+        .projects__swiper-btn-icon {
+            transform: scale(1.1) translateX(-2px);
+        }
+    }
 }
 
 .projects__swiper-btn-next {
     right: 0;
+
+    &:hover {
+        .projects__swiper-btn-icon {
+            transform: scale(1.1) translateX(2px);
+        }
+    }
 }
 
 .projects__item {
@@ -105,4 +124,11 @@
 
     color: $main-light-color;
     background-color: $accent-color;
+
+    transition: color 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: $secondary-dark-color;
+    }
 }

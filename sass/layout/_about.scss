@@ -229,7 +229,6 @@
 .form__input {
     cursor: pointer;
     background: inherit;
-    border: none;
     border: 1px solid transparent;
     border-bottom: 1px solid #FFFFFF;
     padding: 6px 10px;
@@ -239,6 +238,7 @@
     line-height: 17px;
     letter-spacing: 0.05em;
     color: inherit;
+    transition: border 250ms ease-in-out;
 }
 
 .form__fields:focus-within>.form__input {
@@ -266,5 +266,12 @@
 
     @media screen and (min-width: 480px) {
         padding: 22px 32px;
+    }
+
+    transition: color 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: $accent-color-hover;
     }
 }

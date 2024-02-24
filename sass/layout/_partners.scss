@@ -87,13 +87,32 @@
 
     .partners__swiper-btn-icon {
         fill: $accent-color;
+        transition: fill 250ms ease-in-out, transform 50ms ease-in-out;
+    }
+
+    &:hover {
+        .partners__swiper-btn-icon {
+            fill: $accent-color-hover;
+        }
     }
 }
 
 .partners__swiper-btn-prev {
     left: -10px;
+
+    &:hover {
+        .partners__swiper-btn-icon {
+            transform: scale(1.25) translateX(-2px);
+        }
+    }
 }
 
 .partners__swiper-btn-next {
     right: -10px;
+
+    &:hover {
+        .partners__swiper-btn-icon {
+            transform: scale(1.25) translateX(2px);
+        }
+    }
 }

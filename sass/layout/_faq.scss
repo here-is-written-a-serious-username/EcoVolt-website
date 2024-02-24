@@ -64,6 +64,12 @@ $color-black: #111;
         &:hover {
             color: $color-grey;
         }
+
+        &:hover {
+            .ac-trigger__icon {
+                transform: rotate(-25deg);
+            }
+        }
     }
 
     // Panel class
@@ -97,7 +103,13 @@ $color-black: #111;
 
         &>.ac-header .ac-trigger {
             .ac-trigger__icon {
-                transform: rotate(-225deg);
+                transform: rotate(-135deg);
+            }
+
+            &:hover {
+                .ac-trigger__icon {
+                    transform: rotate(-110deg);
+                }
             }
         }
     }
