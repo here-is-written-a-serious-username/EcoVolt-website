@@ -1,48 +1,29 @@
-
-
-Notiflix.Notify.init({
-    position: 'right-bottom',
-    opacity: 0.8,
-    distance: '50px',
-    fontSize: '18px',
-});
-
-
 const form = document.querySelector("#form");
 const inputs = document.querySelectorAll(".form__input");
-
-
-
 const FORM_KEY = 'formDataState';
 const formData = {
     name: "",
     tel: "",
 };
 
-form.addEventListener("submit", onFormSubmit);
 form.addEventListener('input', onFormInput);
+form.addEventListener("submit", onFormSubmit);
 (() => {
     inputs.forEach((input) => {
         input.addEventListener("blur", onValidatorInputBlur);
     });
 })();
 
+Notiflix.Notify.init({
+    position: 'right-top',
+    opacity: 0.9,
+    distance: '80px',
+    fontSize: '18px',
+    backOverlay: true,
+    plainText: false,
+});
+
 afterPageReload();
-
-function onValidatorInputBlur(event) {
-    const input = event.currentTarget;
-    const inputContentLength = event.currentTarget.value.split("").length;
-
-    if (inputContentLength === 0) {
-        input.classList.remove('form__input-valid', 'form__input-invalid');
-    } else if (inputContentLength >= Number(input.dataset.length)) {
-        input.classList.remove('form__input-invalid');
-        input.classList.add('form__input-valid');
-    } else {
-        input.classList.remove('form__input-valid');
-        input.classList.add('form__input-invalid');
-    };
-}
 
 function onFormInput(event) {
     const { user_name, user_tel } = event.currentTarget.elements;
@@ -58,12 +39,11 @@ function onFormSubmit(event) {
     const hasValidInput = Array.from(inputs).every(input => input.classList.contains('form__input-valid'));
 
     if (!hasInvalidInput && hasValidInput) {
-        const formDataMessage = `<b>Нова заявка</b>
-        <b>Ім’я: ${formData.name}</b>;
-        <b>Номер: ${formData.tel}</b>;`
+        // const formDataMessage = `<b>Нова заявка</b>
+        // <b>Ім’я: ${formData.name}</b>;
+        // <b>Номер: ${formData.tel}</b>;`
 
-        Notiflix.Notify.success(`Заявку надіслано.`);
-        Notiflix.Notify.success(formDataMessage);
+        Notiflix.Notify.success(`Заявку надіслано! <br> Ім’я: ${formData.name} <br> Номер: ${formData.tel}`);
 
         inputs.forEach(input => {
             input.classList.remove('form__input-valid', 'form__input-invalid');
@@ -105,4 +85,31 @@ function afterPageReload() {
 
     formData.name = storedData.name || '';
     formData.tel = storedData.tel || '';
+
+    validatorInputAfterPageReload()
+}
+
+function onValidatorInputBlur(event) {
+    const input = event.currentTarget;
+    const inputContentLength = event.currentTarget.value.split("").length;
+    inputClassMaker(input, inputContentLength);
+}
+
+function validatorInputAfterPageReload() {
+    inputs.forEach((input) => {
+        let inputContentLength = input.value.split("").length;
+        inputClassMaker(input, inputContentLength);
+    });
+}
+
+function inputClassMaker(input, inputContentLength) {
+    if (inputContentLength === 0) {
+        input.classList.remove('form__input-valid', 'form__input-invalid');
+    } else if (inputContentLength >= Number(input.dataset.length)) {
+        input.classList.remove('form__input-invalid');
+        input.classList.add('form__input-valid');
+    } else {
+        input.classList.remove('form__input-valid');
+        input.classList.add('form__input-invalid');
+    };
 }
