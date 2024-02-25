@@ -15,6 +15,7 @@
         referrerpolicy="no-referrer">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/notiflix@3.2.7/src/notiflix.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/main.min.css">
 
@@ -186,12 +187,12 @@
                     <div class="form__fields-wrap">
                         <label class="form__fields">
                             Ваше ім’я
-                            <input class="form__input" type="text">
+                            <input class="form__input" type="text" name="user_name" required autocomplete="off" data-length="2">
                         </label>
 
                         <label class="form__fields">
                             Номер телефону
-                            <input class="form__input" type="tel">
+                            <input class="form__input" type="tel" name="user_tel" required autocomplete="off" data-length="10">
                         </label>
                     </div>
 
@@ -667,6 +668,9 @@
     <script src="./js/accordion.js" type="module"></script>
 
     <script src="./js/pageNav.js" type="module"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/notiflix@3.2.7/dist/notiflix-aio-3.2.7.min.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
 
 </body>
 

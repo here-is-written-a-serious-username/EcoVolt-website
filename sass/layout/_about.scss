@@ -233,7 +233,7 @@
     border-bottom: 1px solid #FFFFFF;
     padding: 6px 10px;
     margin-top: 4px;
-
+    border-radius: 5px;
     font-size: 16px;
     line-height: 17px;
     letter-spacing: 0.05em;
@@ -243,8 +243,15 @@
 
 .form__fields:focus-within>.form__input {
     border: 1px solid #FFFFFF;
-    border-radius: 5px;
     outline: none;
+}
+
+.form__input-valid {
+    border: 1.5px solid rgb(0, 120, 0);
+}
+
+.form__input-invalid {
+    border: 1.5px solid rgb(155, 0, 0);
 }
 
 .form__btn {
