@@ -1,6 +1,6 @@
 Customer and Technologies:
 
-- The project was implemented for LLC "Eco Volt", a company specializing in the sale of components and the installation of solar power plants.
+- The project was implemented for LLC "Eco Volt", a company specializing in the sales of components and the installation of solar power plants.
 
 - Technologies used: HTML, SASS, JS.
 
@@ -25,4 +25,3 @@ Implemented Features:
 - Sliders and accordion menus.
   
 - Form with minimal JS validation, error/success notifications (with future implementation of data submission to Telegram or email).
-  
