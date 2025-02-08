@@ -25,3 +25,4 @@ Implemented Features:
 - Sliders and accordion menus.
   
 - Form with minimal JS validation, error/success notifications (with future implementation of data submission to Telegram or email).
+
