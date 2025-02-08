@@ -22,7 +22,7 @@ Implemented Features:
 
 - Smooth scrolling to sections using the navigation menu.
 
-- Sliders and accordion menus.
+- Sliders and accordion menu.
 
 - Form with minimal JS validation, error/success notifications (with future implementation of data submission to Telegram or email).
 
